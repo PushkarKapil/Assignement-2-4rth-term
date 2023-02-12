@@ -1,0 +1,9 @@
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title"> {{contentItem?.title}}({{contentItem?.type}})</h5>
+        <img *ngIf="contentItem" (click)="showID()" src="{{contentItem?.imgURL}}"  alt="...">
+        <p *ngIf="contentItem" class="card-text "><strong> Description :</strong> {{contentItem?.discription}}.</p>
+        <p *ngIf="contentItem" class="card-text"><small class="text-muted"># {{contentItem?.tags}}</small></p>
+    </div>
+</div>
